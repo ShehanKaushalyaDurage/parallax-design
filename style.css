@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: white;
+  z-index: -999;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2em;
+  pointer-events: none;
+  margin-right: 270px;
+  animation-name: sk;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background-color: #359381;
+  color: white;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#text {
+  position: absolute;
+  font-size: 5em;
+  display: inline-block;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.sec {
+  position: relative;
+  background-color: #003329;
+  padding: 100px;
+}
+
+.sec h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sec p {
+  font-size: 20px;
+  color: #007a62;
+}
+
+@keyframes sk {
+  from {
+    color: #003329;
+  }
+
+  to {
+    color: #00a785;
+  }
+}
